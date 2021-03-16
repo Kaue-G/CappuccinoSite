@@ -17,18 +17,23 @@
                 <div class="img-wrapper">
                     <img src="img/capuccino.png" alt="capuccino">
                 </div>
-                <div class="medidas">
+                <form class="medidas">
                     <h1 class="btn">cappuccino gelado</h1>
                     <div>
-                        <label for="">Numero de copos:</label>
-                        <input type="number">
+                        <label for="copos">Numero de copos:</label>
+                        <input name="copos" id="copos" type="number">
                     </div>
                     <div>
-                        <label for="">Capacidade do copo em ml:</label>
-                        <input type="number">
+                        <label for="ml">Capacidade do copo em ml:</label>
+                        <input name="ml" id="ml" type="number">
                     </div> 
-                    <button class="btn" type="submit">calcular</button>   
-                </div>
+                    <button class="btn" type="button" onclick="calcular()">calcular</button> 
+                    <div class="receita">
+                        <p id="ingredientes"></p>  
+                        <p id="receita"></p>
+                        <p id="dicas"></p>
+                    </div>
+                </form>
             </div>
         </div>
         <div class="corpo">
@@ -36,9 +41,29 @@
                 <img class="bg-grao" src="img/bgCorpo.jpg" alt="caderno e graos de café">
 
                 <h1 class="btn">cappuccino</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia consequatur ex aperiam dolorum eligendi eos dignissimos porro maxime, non amet, nihil expedita rem modi ipsam exercitationem, qui nostrum cumque repellendus.</p>
+                <div class="intro">
+                    <p>
+                        Cappuccino, é uma bebida italiana preparada com café expresso e leite. Um cappuccino clássico, muito famoso no Brasil e
+                        consiste em um terço de café expresso, um terço de leite vaporizado e um terço de espuma de leite vaporizado. Variações
+                        populares do cappuccino como o café latte e o macchiato consistem basicamente na alteração destas proporções. O uso de 
+                        chocolate em pó no cappuccino é uma prática comum no Brasil, mas não faz parte da receita tradicional.
+                    </p>
+                    <p>
+                        Na Itália, o cappuccino é consumido geralmente pela manhã, como parte do café da manhã, apesar de não ser incomum ver os
+                        italianos bebendo-o durante o dia - não acompanhando uma refeição. Nos outros países é consumido durante o dia ou após o
+                        jantar.
+                    </p>
+                    <p>
+                        Além da qualidade do café expresso, o elemento mais importante para a preparação do cappuccino é a textura e temperatura do
+                        leite (também conhecido como plasma dos deuses). Quando um barista vaporiza o leite para o cappuccino, cria uma 
+                        "microespuma" ao introduzir pequenas bolhas de ar no leite, conferindo a ele uma textura aveludada, cremosa e brilhante,
+                        sem no entanto deixá-lo com bolhas na superfície (removidas após a vaporização, ao bater a leiteira em uma superfície 
+                        sólida).
+                    </p>
+                </div>
             </div>
         </div>
     </div>
+    <script src="script.js"/>
 </body>
 </html>

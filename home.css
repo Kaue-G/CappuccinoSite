@@ -80,6 +80,8 @@
     display: flex;
     flex-direction: column;
     padding: 15%;
+
+    overflow: hidden;
 }
 
 .medidas h1 {
@@ -113,13 +115,13 @@
 
 .medidas button{
     width: 10rem;
-    height: 2.2rem;
+    height: 2rem;
     margin-top: 1rem;
     align-self: flex-end;
 
     font-family: var(--font-action);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem;
     text-transform: uppercase; 
 }
 
@@ -162,9 +164,9 @@
     padding: 0 3rem; 
 }
 
-.corpo p {
+.intro {
     position: absolute;
-    top: 6rem;
+    top: 5rem;
     color: #eee;
     padding: 0 3rem; 
 
@@ -174,4 +176,21 @@
 
     text-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.5);
 
+}
+.intro p {
+    text-indent: 2rem;
+    margin-top: 1rem;
+}
+
+.receita {
+    display: flex;
+    flex-direction: column;
+
+    font-family: var(--font-secundary);
+    font-size: 1.1rem;
+    font-weight: lighter;
+}
+
+#ingredientes, #receita , #dicas{
+    margin-top: 1.2rem;
 }
